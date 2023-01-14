@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-
+double v2 [15]; 
 double v1[]={
 0.3,
 725913,
@@ -199,9 +199,22 @@ double v1[]={
 0.40751,
 0.02742
 };
-
+void funcion ()
+int main (){
 int longitud=sizeof(v1)/sizeof(v1[0]);
+funcion (){
+    return 0; 
+}
+void funcion (){
+int j=0;
+for (int i=0; i<97;i++){
+    if (v1[i]>100000){
+        v2 [j]=v1[i];
+        printf ("%lf\n", v2[j]); 
+        j++;
+    }
+}
 
 printf("el tamaño del vector es: %d",longitud);
-
+}
 }
